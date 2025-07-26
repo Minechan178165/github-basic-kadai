@@ -1,0 +1,25 @@
+PS C:\Users\kana-\OneDrive\プログラミング学習\git_tutorial> mkdir git_challenge                                                    
+
+    Directory: C:\Users\kana-\OneDrive\プログラミング学習\git_tutorial
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          2025/07/26    15:29                git_challenge
+
+PS C:\Users\kana-\OneDrive\プログラミング学習\git_tutorial> cd git_challenge
+PS C:\Users\kana-\OneDrive\プログラミング学習\git_tutorial\git_challenge> git init
+Initialized empty Git repository in C:/Users/kana-/OneDrive/プログラミング学習/git_tutorial/git_challenge/.git/
+PS C:\Users\kana-\OneDrive\プログラミング学習\git_tutorial\git_challenge> echo "Hello. world!" >> hello_world.txt
+PS C:\Users\kana-\OneDrive\プログラミング学習\git_tutorial\git_challenge> git add hello_world.txt 
+PS C:\Users\kana-\OneDrive\プログラミング学習\git_tutorial\git_challenge> git commit -m "hello_world.txt に追記しました"
+[main a1a826d] hello_world.txt に追記しました
+ 1 file changed, 1 deletion(-)
+PS C:\Users\kana-\OneDrive\プログラミング学習\git_tutorial\git_challenge> echo "こんにちは、世界！">> hello_world.txt
+PS C:\Users\kana-\OneDrive\プログラミング学習\git_tutorial\git_challenge> git add hello_world.txt
+PS C:\Users\kana-\OneDrive\プログラミング学習\git_tutorial\git_challenge> git commit -m "hello_world.txt に追記しました２"
+[main ff077bd] hello_world.txt に追記しました２
+ 1 file changed, 1 insertion(+)
+PS C:\Users\kana-\OneDrive\プログラミング学習\git_tutorial\git_challenge> git log --oneline
+ff077bd (HEAD -> main) hello_world.txt に追記しました２
+a1a826d hello_world.txt に追記しました
+PS C:\Users\kana-\OneDrive\プログラミング学習\git_tutorial\git_challenge> 
